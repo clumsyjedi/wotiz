@@ -1,7 +1,7 @@
 (ns wotiz.core
   (:require [clojure.string]))
 
-(defn whatis
+(defn wotiz
   ([arg] (whatis arg "" 0))
   ([arg msg depth]
    (let [indent (clojure.string/join (for [n (range depth)] " "))]
